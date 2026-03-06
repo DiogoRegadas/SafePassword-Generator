@@ -1,61 +1,64 @@
 # SafePassword Generator 🔑
-### Java Console Application — Logic & Security Study
+### Modern Desktop Security Tool — JavaFX Application
 
 ![Status](https://img.shields.io/badge/status-completed-blue)
-![Type](https://img.shields.io/badge/project-logic--study-orange)
-![Stack](https://img.shields.io/badge/stack-Java%20Core-green)
+![Type](https://img.shields.io/badge/project-security--tool-orange)
+![Stack](https://img.shields.io/badge/stack-JavaFX-green)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
-**SafePassword Generator** is a lightweight Java-based CLI (Command Line Interface) tool designed to generate secure, randomized passwords. This project focuses on string manipulation, loops, and pseudo-random number generation to create credentials with high entropy.
+**SafePassword Generator** is a specialized desktop utility developed in **JavaFX** to help users create highly secure, randomized passwords. Unlike basic CLI tools, this application provides a clean graphical interface to make security accessible and easy to manage.
 
-Designed as a core logic exercise, it demonstrates how to handle user input and character sets to meet modern security requirements.
+The project demonstrates the use of **event-driven programming** and **JavaFX scene management** to build a functional security utility.
 
 ---
 
 ## 🎯 **Project Goals**
 
-- **Randomized Logic:** Implement a robust character selection process using `java.util.Random`.
-- **User Interaction:** Use `Scanner` to capture user preferences for password complexity.
-- **Data Integrity:** Ensure that the generated strings meet the specified length and character requirements.
-- **Clean Code:** Maintain a simple, readable, and efficient single-class structure.
+- **Visual Simplicity:** Create an intuitive GUI that allows anyone to generate a password in seconds.
+- **Custom Entropy:** Implement logic to generate passwords based on specific length requirements.
+- **Safe Distribution:** Provide a clear visual output of the generated credential.
+- **JavaFX Mastery:** Apply core JavaFX concepts like `Stage`, `Scene`, and `Layouts` without complex FXML files.
 
 ---
 
 ## 🛠️ **Technologies Used**
 
 ### **Core Development**
-- **Java 17+**: Core programming language.
-- **java.util.Random**: For the random index selection algorithm.
-- **java.util.Scanner**: For real-time user input handling.
+- **Java 17+**: Main language.
+- **java.util.Random**: The engine behind the randomized character selection.
 
-### **Logic Patterns**
-- **String Building**: Efficient concatenation of character sets (Uppercase, Lowercase, Numbers, Symbols).
-- **Control Flow**: For-loops and conditional statements to build the final output.
+### **Frontend (GUI)**
+- **JavaFX**: Used for all visual components (Buttons, TextFields, Labels).
+- **Event Handling**: To trigger password generation on user click.
+
+### **Patterns & Tools**
+- **Single-Class Architecture**: Efficiently managing the UI and logic in a cohesive structure.
+- **Git & GitHub**: Version control.
 
 ---
 
 ## 📦 **Core Features**
 
-### 🔹 **1. Personalized Generation**
-- Prompts the user for the desired password length.
-- Allows the program to combine different character pools automatically.
+### 🔹 **1. One-Click Generation**
+- Instantly generates a unique password with a single button press.
+- Combines uppercase, lowercase, numbers, and symbols for maximum security.
 
-### 🔹 **2. High Entropy**
-- Uses a diverse set of special characters, digits, and mixed-case letters to prevent brute-force attacks.
+### 🔹 **2. Modern UI Layout**
+- Built using a responsive layout that organizes all elements clearly on the screen.
+- Uses JavaFX's native styling for a professional look.
 
-### 🔹 **3. Instant Execution**
-- Fast and low-resource application that runs directly in any terminal or IDE console.
+### 🔹 **3. Secure Logic**
+- The algorithm ensures that the output is non-deterministic and avoids predictable patterns.
 
 ---
 
-## 🧩 **Logic Breakdown**
+## 🧩 **Architecture Overview**
 
-The application follows a simple but effective logic flow:
-1. **Input:** The user specifies the password length via the terminal.
-2. **Pool Creation:** The program initializes a string containing all possible secure characters.
-3. **Randomization:** A loop runs for 'N' iterations, picking a random character from the pool in each step.
-4. **Output:** The final secure password is printed to the standard output.
+The application is structured to handle everything within the JavaFX lifecycle:
 
+- **The Stage (`start` method)**: Initializes the main window and title.
+- **The Scene**: Defines the container for all GUI elements.
+- **The Action Logic**: A dedicated event listener that pulls from a secure character pool and updates the UI field in real-time.
 
 
 ---
